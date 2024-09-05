@@ -1,4 +1,4 @@
-let move_speed = 2, gravity = 0.5;
+let move_speed = 1.5, gravity = 0.6;
 let bird = document.querySelector('.bird');
 let img = document.getElementById('bird-1');
 let sound_point = new Audio('sounds effect/point.mp3');
@@ -33,7 +33,7 @@ function startGame() {
         e.remove();
     });
     img.style.display = 'block';
-    bird.style.top = '40vh';
+    bird.style.top = '50vh';
     game_state = 'Play';
     message.innerHTML = '';
     score_title.innerHTML = 'Score : ';
